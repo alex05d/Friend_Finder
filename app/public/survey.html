@@ -6,28 +6,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder</title>
-
+    <!--- Booststrap CDN link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!----Bootsrap jQuery CDN likn---->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+    <!--- Bootstrap CDN Links-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
+    <!-- Jquery CDN Link-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+    <!--- main container for the survey-->
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Survey Questions</h1>
+                    <br>
+                    <h3>About You
+                </h2>
+                <!--- form for name and image link--->
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name (Required)</label>
+                        <input type="name" class="form-control" id="name">
 
+                    </div>
+                    <div class="form-group">
+                        <label for="photo_link">Link to Photo Image (Required)</label>
+                        <input type="photo_link" class="form-control" id="photo_link">
+                    </div>
+                </form>
+                <br>
+                <!----start of questions section---->
+                <h4>Question 1</h4>
+                <h5>I believe that family comes first.
+                </h5>
+                <select class="answers" id="q1" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 2</h4>
+                <h5>If there was a fire you would run in to save a pet.</h5>
+                <select class="answers" id="q2" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 3</h4>
+                <h5>There is nothing beter than spicy food.</h5>
+                <select class="answers" id="q3" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 4</h4>
+                <h5>I believe in the 10 second food rule.</h5>
+                <select class="answers" id="q4" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 5</h4>
+                <h5>People upset me all the time.</h5>
+                <select class="answers" id="q5" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 6</h4>
+                <h5>You roll up the tooth paste instead of squeezing it out.</h5>
+                <select class="answers" id="q6" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 7</h4>
+                <h5>Pets are a part of the family.</h5>
+                <select class="answers" id="q7" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 8</h4>
+                <h5>I can stay up to date wiht the latest technology.</h5>
+                <select class="answers" id="q8" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 9</h4>
+                <h5>I like to take on new chalenges everyday.</h5>
+                <select class="answers" id="q9" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+                <br>
+                <h4>Question 10</h4>
+                <h5>I give up when something gets too hard.</h5>
+                <select class="answers" id="q10" data-placeholder="Select Your Options">
+                    <option value="0">Select an Option</option>
+                    <option value="1">1 (Strongly Agree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Disagree</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <!--- submit button for the survey--->
+        <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit Answers!</button>
+        <br>
+        <br>
     </div>
 
+    <!-- Modal showing asnwer to survey-->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel" id="friend_Name"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="friend_Image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script type="text/javascript">
+        //on click event to submit the form
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            // form validation
+            function validForm() {
+                var valid = true;
+                $(".from-control").each(function () {
+                    if ($(this).val() === "") {
+                        valid = false;
+                    }
+                });
+
+
+                $(".answers").each(function () {
+                    if ($(this).val() === "0") {
+                        valid = false;
+                    }
+                });
+                return valid;
+            };
+
+            if (validForm()) {
+                var newFriend = {
+                    name: $("#name").val(),
+                    photo: $("#photo_link").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+
+                };
+
+                console.log(newFriend);
+                $.post("/api/friends", newFriend, function (data) {
+                    console.log("add new", data);
+                })
+            } else {
+                // alert("Please fill in all the fields!");
+
+            }
+
+
+        });
+    </script>
 </body>
 
 </html>

@@ -1,23 +1,23 @@
 
 
-var friendsArrar = [
+var friends = [
     {
-        "name": "",
-        "photo": "",
+        "name": "Homer Simpson",
+        "photo": "https://www.kcbi.org/wp-content/uploads/2019/03/homer-simpson.jpg",
         "scores": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0
+            2,
+            1,
+            5,
+            3,
+            3,
+            3,
+            2,
+            4,
+            2,
+            1
         ]
 
     }
 ];
 
-module.exports = friendsArrar;
+module.exports = friends;
