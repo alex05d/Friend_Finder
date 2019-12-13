@@ -157,11 +157,22 @@
             </div>
         </div>
         <br>
-        <!--- submit button for the survey--->
-        <button type="submit" class="btn btn-primary btn-lg" id="submit">Submit Answers!</button>
-        <br>
+    </div>
+    <div class="container" style="margin-bottom: 10px">
+        <div class="row">
+            <!--- submit button for the survey--->
+            <button type="submit" class="btn-primary btn-lg block" id="submit"
+                style="display: block;width: 100%;">Submit Answers!</button>
+            <br>
+            <br>
+        </div>
+        <a href="/api/friends">API Friends List |</a><a href="https://github.com/alex05d/Friend_Finder.git"
+            target="_blank">
+            GitHub
+            Repo</a>
         <br>
     </div>
+
 
     <!-- Modal showing asnwer to survey-->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
@@ -169,7 +180,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">test</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">name</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -224,19 +235,15 @@
                         $("#q10").val()
                     ]
                 };
-
-                console.log(newFriend);
+                //passing new friend to array and pulling best match in the data
                 $.post("/api/friends", newFriend, function (data) {
-                    console.log("best match ", data.name.photo);
                     $("#staticBackdropLabel").text(data.name.name);
                     $("#friend_Image").attr("src", data.name.photo);
                     $('#staticBackdrop').modal('toggle');
                 })
             } else {
-                alert("Please fill in all the fields!");
-
-
-
+                //
+                alert("Please fill in all the fields and answers!");
             }
 
 

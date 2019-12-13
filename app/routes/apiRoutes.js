@@ -62,15 +62,7 @@ module.exports = function (app) {
         }
 
         // display match
-        console.log(bestMatch)
-
-
-
-
-
-
-
-
+        console.log(bestMatch);
         friends.push(req.body);
         res.json(bestMatch);
     });
