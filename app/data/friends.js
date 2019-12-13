@@ -17,6 +17,40 @@ var friends = [
             1
         ]
 
+    },
+    {
+        "name": "Bart Simpson",
+        "photo": "https://static.simpsonswiki.com/images/thumb/6/65/Bart_Simpson.png/300px-Bart_Simpson.png",
+        "scores": [
+            2,
+            5,
+            3,
+            1,
+            2,
+            5,
+            5,
+            1,
+            3,
+            5
+        ]
+
+    },
+    {
+        "name": "Lisa Simpson",
+        "photo": "https://dhammawiki.com/images/e/ec/Lisa_Simpson.png",
+        "scores": [
+            3,
+            4,
+            2,
+            5,
+            5,
+            5,
+            3,
+            1,
+            4,
+            5
+        ]
+
     }
 ];
 
