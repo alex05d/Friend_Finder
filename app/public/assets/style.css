@@ -1,0 +1,14 @@
+body{
+    background-color: #00a6ff;
+}
+#home_page{
+        margin-top: 10%;
+}
+.col-md-12{
+    background-color: lightgray;
+    padding-bottom: 20px;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
